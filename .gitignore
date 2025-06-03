@@ -1,0 +1,11 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Package artifacts
+*.zip
+
+# IDE/editor files
+.vscode/
