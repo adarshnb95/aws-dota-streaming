@@ -4,7 +4,7 @@
     {
       "Effect": "Allow",
       "Action": ["kinesis:PutRecord", "kinesis:PutRecords"],
-      "Resource": "arn:aws:kinesis:<YOUR_REGION>:<YOUR_ACCOUNT_ID>:stream/DotaLiveStream"
+      "Resource": "arn:aws:kinesis:us-east-1:059032601967:stream/DotaLiveStream"
     },
     {
       "Effect": "Allow",
@@ -13,7 +13,7 @@
         "logs:CreateLogStream",
         "logs:PutLogEvents"
       ],
-      "Resource": "arn:aws:logs:<YOUR_REGION>:<YOUR_ACCOUNT_ID>:log-group:/aws/lambda/DotaPollingLambda*"
+      "Resource": "arn:aws:kinesis:us-east-1:059032601967:log-group:/aws/lambda/DotaPollingLambda*"
     }
   ]
 }

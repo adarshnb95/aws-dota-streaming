@@ -1,0 +1,1 @@
+arn:aws:kinesis:us-east-1:059032601967:stream/DotaLiveStream
