@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kinesis:GetRecords",
+        "kinesis:GetShardIterator",
+        "kinesis:DescribeStream",
+        "dynamodb:PutItem"
+      ],
+      "Resource": [
+        "arn:aws:kinesis:us-east-1:059032601967:stream/DotaLiveStream",
+        "arn:aws:dynamodb:us-east-1:059032601967:table/DotaLiveGames"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:us-east-1:059032601967:log-group:/aws/lambda/DotaConsumerLambda*"
+    }
+  ]
+}
